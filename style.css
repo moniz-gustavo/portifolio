@@ -1,0 +1,125 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f2f7fc;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: linear-gradient(to bottom, #e3f0ff, #f2f7fc);
+}
+
+.nome {
+  font-size: 36px;
+  font-weight: 800;
+  color: #12335e;
+}
+
+header p {
+  font-size: 18px;
+  color: #4e7ab3;
+  margin-top: 10px;
+}
+
+/* Seção de projetos */
+.projetos {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.projetos h2 {
+  font-size: 24px;
+  color: #12335e;
+  margin-bottom: 20px;
+}
+
+/* Container dos cartões - rolagem horizontal */
+.cartoes {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 24px;
+  max-width: 100%;
+  padding: 20px 40px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+}
+
+.cartoes::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cartoes::-webkit-scrollbar-thumb {
+  background-color: #c4d2e2;
+  border-radius: 10px;
+}
+
+/* Estilo de cada cartão */
+.cartao {
+  flex: 0 0 auto;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 260px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.cartao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cartao h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0139c9;
+  margin: 10px 0;
+}
+
+.cartao p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Imagem e texto lado a lado */
+.imagem-informativo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.icone-projeto {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.informativo {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Rodapé */
+footer {
+  background-color: #e3f0ff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 60px;
+}
