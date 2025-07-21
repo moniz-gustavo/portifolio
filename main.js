@@ -1,3 +1,18 @@
+function configuraBotaoCarrosel() {
+    const container = document.querySelector('.cartoes');
+    const btnDireita = document.querySelector('.passdireita');
+    const btnEsquerda = document.querySelector('.passesquerda')
+    const valorRotacao = 300;
+
+    btnDireita.addEventListener('click', () => {
+        container.scrollLeft += valorRotacao;
+    });
+    btnEsquerda.addEventListener('click', () => {
+        container.scrollLeft -= valorRotacao;
+    });
+}
+
+
 window.onload = function () {
   const projetos = [
     {
@@ -39,7 +54,7 @@ window.onload = function () {
     
   ];
 
-  const container = document.querySelector('.cartoes'); // ← ponto antes do nome da classe
+    const container = document.querySelector('.cartoes'); // ← ponto antes do nome da classe
 
   projetos.forEach(proj => {
     const card = document.createElement('div');
@@ -53,4 +68,10 @@ window.onload = function () {
     <p>${proj.descricao}</p>`;
     container.appendChild(card); // ← aqui o nome correto da variável
   });
+
+
 };
+
+//função para rodar a lista de cartoes
+configuraBotaoCarrosel()
+

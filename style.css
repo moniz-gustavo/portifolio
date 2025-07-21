@@ -43,31 +43,34 @@ header p {
   margin-bottom: 20px;
 }
 
-/* Container dos cartões - rolagem horizontal */
+/* Envolve botões + carrossel */
+.carrosel-wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 60px; /* antes estava 40px */
+}
+
+
+/* Container dos cartões */
 .cartoes {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  gap: 24px;
-  max-width: 100%;
-  padding: 20px 40px;
-  margin: 0 auto;
-  justify-content: flex-start;
   scroll-behavior: smooth;
+  gap: 24px;
+  padding: 20px;
+  scrollbar-width: none;
 }
 
 .cartoes::-webkit-scrollbar {
-  height: 8px;
-}
-
-.cartoes::-webkit-scrollbar-thumb {
-  background-color: #c4d2e2;
-  border-radius: 10px;
+  display: none;
 }
 
 /* Estilo de cada cartão */
 .cartao {
   flex: 0 0 auto;
+  scroll-snap-align: start;
   background-color: white;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -94,25 +97,58 @@ header p {
   color: #333;
 }
 
-/* Imagem e texto lado a lado */
+/* Imagem + informativo lado a lado */
 .imagem-informativo {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
+/* Estilo da imagem */
 .icone-projeto {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
 
+/* Texto informativo */
 .informativo {
   font-size: 14px;
   color: #555;
 }
+
+.passesquerda,
+.passdireita {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: rgba(1, 57, 201, 0.3); /* azul bem suave e transparente */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.passesquerda:hover,
+.passdireita:hover {
+  color: rgba(1, 57, 201, 0.8); /* mais forte no hover */
+}
+
+.passesquerda {
+  left: 0;
+  padding-left: 8px;
+}
+
+.passdireita {
+  right: 0;
+  padding-right: 8px;
+}
+
+
 
 /* Rodapé */
 footer {
