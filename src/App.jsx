@@ -63,10 +63,10 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Header/Navigation */}
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-4 text">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Shield className="h-8 w-8 text-blue-600" />
+              <Shield className="h-8 w-8 text-purple-600" />
               <span className="text-xl font-bold text-slate-900">Gustavo Nóbrega</span>
               <Badge variant="secondary" className="hidden sm:inline-flex">QA Especialista</Badge>
             </div>
@@ -130,7 +130,7 @@ function App() {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
               Auditoria Técnica de Qualidade para 
-              <span className="text-blue-600"> Aplicações Web</span>
+              <span className="text-purple-800"> Aplicações Web</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed">
               Evite bugs críticos, perda de vendas e insatisfação do usuário. 
@@ -138,13 +138,13 @@ function App() {
             </p>
             <div className="bg-white p-6 rounded-lg shadow-lg mb-8 inline-block">
               <p className="text-lg font-semibold text-slate-800 mb-2">
-                <FileText className="inline h-5 w-5 mr-2 text-blue-600" />
+                <FileText className="inline h-5 w-5 mr-2 text-purple-800" />
                 Entregável: Relatório completo + Scripts automatizados com Cypress
               </p>
             </div>
             <Button 
               size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
+              className="bg-purple-800 hover:bg-purple-600 text-white px-8 py-4 text-lg"
               onClick={() => scrollToSection('contato')}
             >
               Quero auditar meu sistema
@@ -223,24 +223,24 @@ function App() {
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Ideal para:</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center justify-center md:justify-start">
-                  <Target className="h-5 w-5 text-blue-600 mr-2" />
+                  <Target className="h-5 w-5 text-purple-800 mr-2" />
                   <span>Desenvolvedores que precisam de ajuda com testes</span>
                 </div>
                 <div className="flex items-center justify-center md:justify-start">
-                  <Target className="h-5 w-5 text-blue-600 mr-2" />
+                  <Target className="h-5 w-5 text-purple-800 mr-2" />
                   <span>Pequenas empresas sem equipe de QA</span>
                 </div>
                 <div className="flex items-center justify-center md:justify-start">
-                  <Target className="h-5 w-5 text-blue-600 mr-2" />
+                  <Target className="h-5 w-5 text-purple-800 mr-2" />
                   <span>Startups antes de lançar um MVP</span>
                 </div>
                 <div className="flex items-center justify-center md:justify-start">
-                  <Target className="h-5 w-5 text-blue-600 mr-2" />
+                  <Target className="h-5 w-5 text-purple-800 mr-2" />
                   <span>Donos de software que querem reduzir falhas</span>
                 </div>
               </div>
               
-              <p className="text-xl font-semibold text-blue-600 mt-8">
+              <p className="text-xl font-semibold text-purple-800 mt-8">
                 Se você precisa de confiança no sistema, eu posso te ajudar.
               </p>
             </div>
@@ -367,7 +367,7 @@ function App() {
             
             <div className="grid md:grid-cols-4 gap-8 mb-12">
               <div className="text-center">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="bg-purple-800 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">Envio da aplicação</h3>
@@ -375,7 +375,7 @@ function App() {
               </div>
 
               <div className="text-center">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="bg-purple-800 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">Análise completa</h3>
@@ -383,7 +383,7 @@ function App() {
               </div>
 
               <div className="text-center">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="bg-purple-800 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">Entrega em 3 dias</h3>
@@ -391,7 +391,7 @@ function App() {
               </div>
 
               <div className="text-center">
-                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="bg-purple-800 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   4
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">Suporte pós-entrega</h3>
@@ -400,7 +400,7 @@ function App() {
             </div>
 
             <div className="text-center bg-white p-8 rounded-lg shadow-lg">
-              <Clock className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <Clock className="h-12 w-12 text-purple-800 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Em até 3 dias úteis você recebe:</h3>
               <div className="grid md:grid-cols-3 gap-6 text-left">
                 <div className="flex items-start">
@@ -418,7 +418,7 @@ function App() {
               </div>
               <Button 
                 size="lg" 
-                className="mt-8 bg-blue-600 hover:bg-blue-700"
+                className="mt-8 bg-purple-800 hover:bg-purple-600"
                 onClick={() => scrollToSection('contato')}
               >
                 Começar Auditoria
@@ -444,7 +444,7 @@ function App() {
               <Card className="border-2 hover:border-blue-200 transition-colors">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Auditoria Essencial</CardTitle>
-                  <div className="text-4xl font-bold text-blue-600 mt-4">R$ 497</div>
+                  <div className="text-4xl font-bold text-purple-800 mt-4">R$ 497</div>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center">
@@ -460,7 +460,7 @@ function App() {
                     <span>Suporte por 7 dias</span>
                   </div>
                   <Button 
-                    className="w-full mt-6" 
+                    className="w-full mt-6 " 
                     variant="outline"
                     onClick={() => scrollToSection('contato')}
                   >
@@ -469,13 +469,13 @@ function App() {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-blue-600 hover:border-blue-700 transition-colors relative">
-                <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600">
+              <Card className="border-2 border-purple-800 hover:border-purple-600 transition-colors relative">
+                <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-purple-800">
                   Mais Popular
                 </Badge>
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Auditoria + Automação</CardTitle>
-                  <div className="text-4xl font-bold text-blue-600 mt-4">R$ 697</div>
+                  <div className="text-4xl font-bold text-purple-800 mt-4">R$ 697</div>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center">
@@ -491,7 +491,7 @@ function App() {
                     <span>Vídeo explicando como rodar os testes</span>
                   </div>
                   <Button 
-                    className="w-full mt-6 bg-blue-600 hover:bg-blue-700"
+                    className="w-full mt-6 bg-purple-800 hover:bg-purple-600"
                     onClick={() => scrollToSection('contato')}
                   >
                     Quero esse plano
@@ -514,7 +514,7 @@ function App() {
             
             <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
               <div className="flex items-center justify-center mb-6">
-                <Award className="h-16 w-16 text-blue-600" />
+                <Award className="h-16 w-16 text-purple-800" />
               </div>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
                 Sou Gustavo, QA com 5 anos de experiência em empresas de tecnologia. 
@@ -614,7 +614,7 @@ function App() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+                  <Button type="submit" size="lg" className="w-full bg-purple-800 hover:bg-purple-00">
                     <Mail className="h-5 w-5 mr-2" />
                     Enviar pedido de orçamento
                   </Button>
@@ -636,7 +636,7 @@ function App() {
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div>
                 <div className="flex items-center space-x-2 mb-4">
-                  <Shield className="h-6 w-6 text-blue-400" />
+                  <Shield className="h-6 w-6 text-purple-600" />
                   <span className="text-lg font-bold">Gustavo Nóbrega</span>
                 </div>
                 <p className="text-slate-300">
